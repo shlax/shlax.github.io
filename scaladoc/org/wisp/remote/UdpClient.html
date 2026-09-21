@@ -1,0 +1,186 @@
+<!DOCTYPE html><html data-pathToRoot="../../../" data-rawLocation="org/wisp/remote/UdpClient" data-dynamicSideMenu="false"><head><meta charset="utf-8"></meta><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta><title>UdpClient</title><link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico"></link><script type="text/javascript" src="../../../scripts/theme.js"></script><script type="text/javascript" src="../../../scripts/searchData.js" defer="true"></script><script type="text/javascript" src="../../../scripts/scastieConfiguration.js" defer="true"></script><link rel="stylesheet" href="../../../styles/theme/bundle.css"></link><link rel="stylesheet" href="../../../styles/theme/components/bundle.css"></link><link rel="stylesheet" href="../../../styles/theme/components/button/bundle.css"></link><link rel="stylesheet" href="../../../styles/theme/layout/bundle.css"></link><link rel="stylesheet" href="../../../styles/dotty-icons.css"></link><link rel="stylesheet" href="../../../styles/filter-bar.css"></link><link rel="stylesheet" href="../../../styles/searchbar.css"></link><link rel="stylesheet" href="../../../styles/social-links.css"></link><link rel="stylesheet" href="../../../styles/versions-dropdown.css"></link><link rel="stylesheet" href="../../../styles/content-contributors.css"></link><script type="text/javascript" src="../../../hljs/highlight.pack.js" defer="true"></script><script type="text/javascript" src="../../../scripts/hljs-scala3.js" defer="true"></script><script type="text/javascript" src="../../../scripts/ux.js" defer="true"></script><script type="text/javascript" src="../../../scripts/common/component.js" defer="true"></script><script type="text/javascript" src="../../../scripts/common/utils.js" defer="true"></script><script type="text/javascript" src="../../../scripts/components/FilterBar.js" defer="true"></script><script type="text/javascript" src="../../../scripts/components/DocumentableList.js" defer="true"></script><script type="text/javascript" src="../../../scripts/components/Input.js" defer="true"></script><script type="text/javascript" src="../../../scripts/components/FilterGroup.js" defer="true"></script><script type="text/javascript" src="../../../scripts/components/Filter.js" defer="true"></script><script type="text/javascript" src="../../../scripts/scaladoc-scalajs.js" defer="true"></script><script type="text/javascript" src="../../../scripts/contributors.js" defer="true"></script><script type="text/javascript" src="https://d3js.org/d3.v6.min.js" defer="true"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/graphlib-dot@0.6.2/dist/graphlib-dot.min.js" defer="true"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dagre-d3/0.6.1/dagre-d3.min.js" defer="true"></script><script type="text/javascript" src="https://scastie.scala-lang.org/embedded.js" defer="true"></script><script type="text/javascript" src="../../../scripts/data.js" defer="true"></script><script>var pathToRoot = "../../../";</script></head><body><div id=""><div id="header" class="body-small"><div class="header-container-left"><a href="../../../" class="logo-container"><span class="project-name h300">wisp 0.0.1-SNAPSHOT API</span></a><span onclick="dropdownHandler(event)" class="text-button with-arrow" id="dropdown-trigger"><a></a></span><div id="version-dropdown" class="dropdown-menu"></div></div><div class="header-container-right"><button id="search-toggle" class="icon-button"></button><span id="theme-toggle" class="icon-button"></span><span id="mobile-menu-toggle" class="icon-button hamburger"></span></div></div><div id="mobile-menu"><div class="mobile-menu-header body-small"><span class="mobile-menu-logo"><span class="project-name h300">wisp 0.0.1-SNAPSHOT API</span></span><button id="mobile-menu-close" class="icon-button close"></button></div><div class="mobile-menu-container body-medium"><input id="mobile-scaladoc-searchbar-input" class="scaladoc-searchbar-input" type="search" placeholder="Find anything"></input><span id="mobile-theme-toggle" class="mobile-menu-item mode"></span></div></div><span id="mobile-sidebar-toggle" class="floating-button"></span><div id="leftColumn" class="body-small"><div class="switcher-container"><a id="api-nav-button" class="switcher h100 selected" href="../../../index.html">API</a></div><nav id="api-nav" class="side-menu"><div class="ni n0 expanded"><span class="nh h100 expanded cs"><button class="ar icon-button expanded"></button><a href="../../wisp.html"><span class="micon pa"></span><span>org.wisp</span></a></span><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="../exceptions.html"><span class="micon pa"></span><span>exceptions</span></a></span><div class="ni n2 "><span class="nh "><a href="../exceptions/ProcessingException.html"><span class="micon cl"></span><span>ProcessingException</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../exceptions/ProcessingException$.html"><span class="micon ob"></span><span>ProcessingException</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../exceptions/UndeliveredException$.html"><span class="micon ob"></span><span>UndeliveredException</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../exceptions/UndeliveredException.html"><span class="micon cl"></span><span>UndeliveredException</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="../observable.html"><span class="micon pa"></span><span>observable</span></a></span><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="../observable/DefaultObservable.html"><span class="micon cl"></span><span>DefaultObservable</span></a></span><div class="ni n3 "><span class="nh "><a href="../observable/DefaultObservable$CollectionSubscription.html"><span class="micon cl"></span><span>CollectionSubscription</span></a></span></div></div><div class="ni n2 "><span class="nh "><a href="../observable/Observable$.html"><span class="micon ob"></span><span>Observable</span></a></span></div><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="../observable/Observable.html"><span class="micon tr"></span><span>Observable</span></a></span><div class="ni n3 "><span class="nh "><a href="../observable/Observable$Subscription.html"><span class="micon tr"></span><span>Subscription</span></a></span></div></div></div><div class="ni n1 expanded"><span class="nh h100 expanded cs"><button class="ar icon-button expanded"></button><a href="../remote.html"><span class="micon pa"></span><span>remote</span></a></span><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="exceptions.html"><span class="micon pa"></span><span>exceptions</span></a></span><div class="ni n3 "><span class="nh "><a href="exceptions/RemoteCallException.html"><span class="micon cl"></span><span>RemoteCallException</span></a></span></div><div class="ni n3 "><span class="nh "><a href="exceptions/RemoteCallException$.html"><span class="micon ob"></span><span>RemoteCallException</span></a></span></div></div><div class="ni n2 "><span class="nh "><a href="RemoteLink.html"><span class="micon cl"></span><span>RemoteLink</span></a></span></div><div class="ni n2 "><span class="nh "><a href="RemoteMessage.html"><span class="micon tr"></span><span>RemoteMessage</span></a></span></div><div class="ni n2 expanded"><span class="nh h100 selected"><a href="#"><span class="micon cl"></span><span>UdpClient</span></a></span></div><div class="ni n2 "><span class="nh "><a href="UdpRouter.html"><span class="micon cl"></span><span>UdpRouter</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="../serializer.html"><span class="micon pa"></span><span>serializer</span></a></span><div class="ni n2 "><span class="nh "><a href="../serializer/ReadWrite$.html"><span class="micon ob"></span><span>ReadWrite</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../serializer/ReadWrite.html"><span class="micon tr"></span><span>ReadWrite</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="../stream.html"><span class="micon pa"></span><span>stream</span></a></span><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="../stream/flow.html"><span class="micon pa"></span><span>flow</span></a></span><div class="ni n3 "><span class="nh "><a href="../stream/flow/FlowProcessor.html"><span class="micon cl"></span><span>FlowProcessor</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/flow/FlowPublisher.html"><span class="micon cl"></span><span>FlowPublisher</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/flow/FlowSubscriber.html"><span class="micon cl"></span><span>FlowSubscriber</span></a></span></div></div><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="../stream/graph.html"><span class="micon pa"></span><span>graph</span></a></span><div class="ni n3 "><span class="nh "><a href="../stream/graph/StreamGraph.html"><span class="micon cl"></span><span>StreamGraph</span></a></span></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="../stream/graph/StreamNode.html"><span class="micon cl"></span><span>StreamNode</span></a></span><div class="ni n4 "><span class="nh "><a href="../stream/graph/StreamNode$SplitNode.html"><span class="micon cl"></span><span>SplitNode</span></a></span></div></div></div><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="../stream/iterator.html"><span class="micon pa"></span><span>iterator</span></a></span><div class="ni n3 "><span class="nh "><a href="../stream/iterator/ExecutionFlow.html"><span class="micon tr"></span><span>ExecutionFlow</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/RunnableSink.html"><span class="micon cl"></span><span>RunnableSink</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/RunnableSource.html"><span class="micon cl"></span><span>RunnableSource</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/RunnableSourceSink.html"><span class="micon cl"></span><span>RunnableSourceSink</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/RunnableStream.html"><span class="micon tr"></span><span>RunnableStream</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/RunnableTransformer.html"><span class="micon cl"></span><span>RunnableTransformer</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/RunnableTransformer$.html"><span class="micon ob"></span><span>RunnableTransformer</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/SingleNodeFlow.html"><span class="micon tr"></span><span>SingleNodeFlow</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/SinkExecution.html"><span class="micon tr"></span><span>SinkExecution</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/SourceFlow.html"><span class="micon tr"></span><span>SourceFlow</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/SourceTransformer.html"><span class="micon tr"></span><span>SourceTransformer</span></a></span></div><div class="ni n3"><span class="nh "><button class="ar icon-button "></button><a href="../stream/iterator/SplitStream.html"><span class="micon cl"></span><span>SplitStream</span></a></span><div class="ni n4 "><span class="nh "><a href="../stream/iterator/SplitStream$Split.html"><span class="micon tr"></span><span>Split</span></a></span></div></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/StreamBuffer.html"><span class="micon cl"></span><span>StreamBuffer</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/StreamFlow.html"><span class="micon tr"></span><span>StreamFlow</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/StreamHandler.html"><span class="micon tr"></span><span>StreamHandler</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/StreamLock.html"><span class="micon tr"></span><span>StreamLock</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/StreamSink.html"><span class="micon cl"></span><span>StreamSink</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/StreamSource.html"><span class="micon cl"></span><span>StreamSource</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/StreamTransformer$.html"><span class="micon ob"></span><span>StreamTransformer</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/StreamTransformer.html"><span class="micon cl"></span><span>StreamTransformer</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../stream/iterator/ZipStream.html"><span class="micon cl"></span><span>ZipStream</span></a></span></div></div><div class="ni n2 "><span class="nh "><a href="../stream/Sink.html"><span class="micon tr"></span><span>Sink</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../stream/Sink$.html"><span class="micon ob"></span><span>Sink</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../stream/SinkSource$.html"><span class="micon ob"></span><span>SinkSource</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../stream/SinkSource.html"><span class="micon cl"></span><span>SinkSource</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../stream/Source$.html"><span class="micon ob"></span><span>Source</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../stream/Source.html"><span class="micon tr"></span><span>Source</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../stream/extensions$.html"><span class="micon ob"></span><span>extensions</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="../timer.html"><span class="micon pa"></span><span>timer</span></a></span><div class="ni n2 "><span class="nh "><a href="../timer/Timer.html"><span class="micon cl"></span><span>Timer</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="../utils.html"><span class="micon pa"></span><span>utils</span></a></span><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="../utils/closeable$.html"><span class="micon ob"></span><span>closeable</span></a></span><div class="ni n3 "><span class="nh "><a href="../utils/closeable$$UsingManager.html"><span class="micon cl"></span><span>UsingManager</span></a></span></div></div><div class="ni n2 "><span class="nh "><a href="../utils/extensions$.html"><span class="micon ob"></span><span>extensions</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../utils/lock$.html"><span class="micon ob"></span><span>lock</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../utils/uuid$.html"><span class="micon ob"></span><span>uuid</span></a></span></div></div><div class="ni n1 "><span class="nh "><a href="../AbstractActor.html"><span class="micon cl"></span><span>AbstractActor</span></a></span></div><div class="ni n1 "><span class="nh "><a href="../Actor.html"><span class="micon tr"></span><span>Actor</span></a></span></div><div class="ni n1 "><span class="nh "><a href="../ActorScheduler.html"><span class="micon tr"></span><span>ActorScheduler</span></a></span></div><div class="ni n1 "><span class="nh "><a href="../ActorSystem.html"><span class="micon cl"></span><span>ActorSystem</span></a></span></div><div class="ni n1 "><span class="nh "><a href="../Consumer.html"><span class="micon tr"></span><span>Consumer</span></a></span></div><div class="ni n1 "><span class="nh "><a href="../Consumer$.html"><span class="micon ob"></span><span>Consumer</span></a></span></div><div class="ni n1 "><span class="nh "><a href="../Link.html"><span class="micon tr"></span><span>Link</span></a></span></div><div class="ni n1 "><span class="nh "><a href="../Message$.html"><span class="micon ob"></span><span>Message</span></a></span></div><div class="ni n1 "><span class="nh "><a href="../Message.html"><span class="micon cl"></span><span>Message</span></a></span></div><div class="ni n1 "><span class="nh "><a href="../QueueScheduler.html"><span class="micon cl"></span><span>QueueScheduler</span></a></span></div></div></nav></div><div id="footer" class="body-small"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div><div id="scaladoc-searchBar"></div><div id="main"><div class="breadcrumbs container"><a href="../../../index.html">wisp 0.0.1-SNAPSHOT API</a>/<a href="../../wisp.html">org.wisp</a>/<a href="../remote.html">org.wisp.remote</a>/<a href="UdpClient.html">UdpClient</a></div><div id="content" class="body-medium"><div><div class="cover-header">
+ <span class="icon"><span class="micon cl"></span></span>
+ <h1 class="h600 single">UdpClient</h1>
+</div>
+<div class="fqname body-large">
+ <span>org.wisp.remote.UdpClient</span>
+</div>
+<div class="main-signature mono-small-block">
+ <div class="signature">
+  <span class="signature-short"><span class="modifiers"></span><span class="kind"><span t="k">class </span></span><a href="UdpClient.html" t="n" class="documentableName ">UdpClient</a>[<span t="k"></span><span data-unresolved-link="" t="t">T</span>](<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">address</span>: <span data-unresolved-link="" t="t">Option</span>[<span data-unresolved-link="" t="t">SocketAddress</span>] = ...)(<span t="k">using </span><span t="k"></span><span data-unresolved-link="" t="n">x$2</span>: <a href="../serializer/ReadWrite.html" t="t">ReadWrite</a>[<span data-unresolved-link="" t="t">T</span>])<span t="k"> extends </span><span data-unresolved-link="" t="t">AutoCloseable</span></span><span class="signature-long"></span>
+ </div>
+</div>
+<div class="cover">
+ <div class="doc">
+  <p>A UDP client for sending messages of type T over a datagram channel.</p>
+  <p>This client serializes messages using the provided <a href="../serializer/ReadWrite.html">org.wisp.serializer.ReadWrite</a> instance, adds CRC32C checksums for data integrity verification, and sends them to remote addresses via UDP.</p>
+ </div>
+ <section id="attributes">
+  <h2 class="h500">Value parameters</h2>
+  <dl class="attributes">
+   <dt class="body-small">address</dt>
+   <dd class="body-medium">
+    <p>optional socket address to bind the datagram channel to</p>
+   </dd>
+  </dl>
+  <h2 class="h500">Attributes</h2>
+  <dl class="attributes">
+   <dt class="body-small">Graph</dt>
+   <dd class="body-medium">
+    <div id="inheritance-diagram" class="diagram-class showGraph">
+     <button type="button" class="label-only-button" onclick="zoomOut()">Reset zoom</button><button type="button" class="label-only-button" onclick="hideGraph()">Hide graph</button><button type="button" class="label-only-button" onclick="showGraph()">Show graph</button>
+     <svg id="graph"></svg>
+     <script type="text/dot" id="dot"> digraph g {
+ node0 [id=node0, label="<span style=\"color: #FFFFFF;\">class <a href=\"UdpClient.html\" t=\"n\">UdpClient</a>[<span t=\"t\">T</span>]</span>", class="class vertex"];
+node1 [id=node1, label="<span style=\"color: #FFFFFF;\">class <span data-unresolved-link=\"\" t=\"n\">Object</span></span>", class="class vertex"];
+node2 [id=node2, label="<span style=\"color: #FFFFFF;\">class <span data-unresolved-link=\"\" t=\"n\">Any</span></span>", class="class vertex"];
+node3 [id=node3, label="<span style=\"color: #FFFFFF;\">trait <span data-unresolved-link=\"\" t=\"n\">Matchable</span></span>", class="trait vertex"];
+node4 [id=node4, label="<span style=\"color: #FFFFFF;\">trait <span data-unresolved-link=\"\" t=\"n\">AutoCloseable</span></span>", class="trait vertex"];
+node5 [id=node5, label="<span style=\"color: #FFFFFF;\">class <a href=\"UdpRouter.html\" t=\"n\">UdpRouter</a>[<span t=\"t\">K</span>, <span t=\"t\">M</span>, <span t=\"t\">R</span>]</span>", class="class vertex"];
+
+
+ node0 -> node1;
+node1 -> node2;
+node1 -> node3;
+node3 -> node2;
+node0 -> node4;
+node4 -> node1;
+node5 -> node0;
+
+}
+</script>
+    </div>
+   </dd>
+   <dt class="body-small">Supertypes</dt>
+   <dd class="body-medium">
+    <div class="mono-small-block supertypes">
+     <div>
+      trait <span data-unresolved-link="" t="n">AutoCloseable</span>
+     </div>
+     <div>
+      class <span data-unresolved-link="" t="n">Object</span>
+     </div>
+     <div>
+      trait <span data-unresolved-link="" t="n">Matchable</span>
+     </div>
+     <div>
+      class <span data-unresolved-link="" t="n">Any</span>
+     </div>
+     <span></span>
+    </div>
+   </dd>
+   <dt class="body-small">Known subtypes</dt>
+   <dd class="body-medium">
+    <div class="mono-small-block subtypes">
+     <div>
+      class <a href="UdpRouter.html" t="n">UdpRouter</a>[<span t="t">K</span>, <span t="t">M</span>, <span t="t">R</span>]
+     </div>
+     <span></span>
+    </div>
+   </dd>
+  </dl>
+ </section>
+</div>
+<section id="members-list">
+ <h2 class="h500">Members list</h2>
+ <div class="documentableFilter">
+  <div class="filtersContainer"></div>
+  <input class="filterableInput" placeholder="Filter by any phrase" data-test-id="filterBarInput" type="search"><button class="clearButton label-only-button" data-test-id="filterBarClearButton">Clear all</button>
+ </div>
+ <div class="membersList expand">
+  <div class="tabs">
+   <div class="contents">
+    <section id="Value-members">
+     <div data-togglable="Value members" class="tab expand">
+      <div class="member-group-header">
+       <h3 data-togglable="Value members" class="h400">Value members</h3>
+      </div>
+      <section id="Concrete-methods">
+       <div class="documentableList expand">
+        <div class="documentableList-expander">
+         <button class="icon-button show-content expand"></button>
+         <h4 class="groupHeader h200">Concrete methods</h4>
+        </div>
+        <div class="documentableElement" id="close-94c" data-f-keywords="override">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">override </span></span><span class="kind"><span t="k">def </span></span><a href="UdpClient.html#close-94c" t="n" class="documentableName ">close</a>(<span t="k"></span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>Closes the underlying datagram channel.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>Closes the underlying datagram channel.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">Definition Classes</dt>
+              <dd class="body-medium">
+               <div>
+                <span data-unresolved-link="">AutoCloseable</span>
+               </div>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="send-fffffba3">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="UdpClient.html#send-fffffba3" t="n" class="documentableName ">send</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">destination</span>: <span data-unresolved-link="" t="t">SocketAddress</span>, <span t="k"></span><span data-unresolved-link="" t="n">message</span>: <span t="t">T</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>Sends a message to the specified address.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>Sends a message to the specified address.</p>
+              <p>The message is serialized with a CRC32C checksum and sent via UDP.</p>
+             </div>
+             <h2 class="h200">Value parameters</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">destination</dt>
+              <dd class="body-medium">
+               <p>the destination socket address</p>
+              </dd>
+              <dt class="body-small">message</dt>
+              <dd class="body-medium">
+               <p>the message to send</p>
+              </dd>
+             </dl>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+    </section>
+   </div>
+  </div>
+ </div>
+</section></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#attributes">Value parameters</a></li><li><a href="#members-list">Members list</a><ul><li><a href="#Value-members">Value members</a><ul><li><a href="#Concrete-methods">Concrete methods</a></li></ul></li></ul></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>
